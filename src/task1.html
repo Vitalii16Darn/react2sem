@@ -8,19 +8,19 @@
 <center>
     <form>
         <h1>Форма додавання викладача</h1>
-        <input type="text" name="fullname" required placeholder="Іван Залізняк" autofocus/>FullName <br/><br/>
+        <input type="text" aria-label="fullname" name="fullname" required placeholder="Іван Залізняк" autofocus/>FullName <br/><br/>
 
         <fieldset>
             <legend>Gender selecting</legend>
-            <input type="radio" name="gender" value="male" checked/>Male <br/><br/>
-            <input type="radio" name="gender" value="female"/>Female <br/><br/>
+            <input aria-label="male" type="radio" name="gender" value="male" checked/>Male <br/><br/>
+            <input aria-label="female" type="radio" name="gender" value="female"/>Female <br/><br/>
         </fieldset>
 
-        <input type="date" name="birth" min="1900-01-01" max="2000-12-31" required/>Birthday <br/><br/>
-        <input type="email" name="email" placeholder="zaliznyak.power@ukr.net" required/>Email <br/><br/>
-        <input type="tel" name="phone" placeholder="093-332-31-63" required/>Phone <br/><br/>
-        <input type="color" name="background"/>Background color <br/><br/>
-        <select name="countries">
+        <input aria-label="birthday" type="date" name="birth" min="1900-01-01" max="2000-12-31" required/>Birthday <br/><br/>
+        <input aria-label="email" type="email" name="email" placeholder="zaliznyak.power@ukr.net" required/>Email <br/><br/>
+        <input aria-label="phone" type="tel" name="phone" placeholder="093-332-31-63" required/>Phone <br/><br/>
+        <input aria-label="background" type="color" name="background"/>Background color <br/><br/>
+        <select aria-label="countries" name="countries">
             <optgroup label="Europe">
                 <option>Ukraine</option>
                 <option>Norway</option>
@@ -36,11 +36,11 @@
         </select>
         Country
         <br/><br/>
-        <input type="text" name="city" required/>City <br/><br/>
-        <textarea rows="5" cols="65">Comment isn't mandatory, you can skip it if you want!</textarea> <br/><br/>
+        <input aria-label="city" type="text" name="city" required/>City <br/><br/>
+        <textarea aria-label="comment" rows="5" cols="65">Comment isn't mandatory, you can skip it if you want!</textarea> <br/><br/>
 
-        <input type="reset" value="Clear">
-        <input type="submit" value="Submit"/>
+        <input aria-label="clear" type="reset" value="Clear">
+        <input aria-label="reset" type="submit" value="Submit"/>
     </form>
 </center>
 </body>
